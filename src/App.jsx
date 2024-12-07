@@ -38,9 +38,9 @@ function App() {
 
       try {
         const res = await fetch(url)
-        const apidata = await res.json()
+        const apiData = await res.json()
         localStorage.setItem(localKey, JSON.stringify(apiData))
-        setData(apidata)
+        setData(apiData)
         console.log('Fetched from API today')
 
       } catch(err){
